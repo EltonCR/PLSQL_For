@@ -3,9 +3,9 @@ DECLARE
 BEGIN
    FOR i IN 1..10 LOOP
       IF MOD(i,2) = 0 THEN     -- i is even
-         INSERT INTO PS_DIG_LN_CHAM VALUES (i, 'i is even', '25/12/2016', 'elton', '2016-01-16');
+         INSERT INTO PS_TAB_LN_CHAM VALUES (i, 'i is even', '25/12/2016', 'elton', '2016-01-16');
       ELSE
-         INSERT INTO PS_DIG_LN_CHAM VALUES (i, 'i is odd', '25/12/2016', 'elton', '2016-01-16');
+         INSERT INTO PS_TAB_LN_CHAM VALUES (i, 'i is odd', '25/12/2016', 'elton', '2016-01-16');
       END IF;
       x := x + 100;
    END LOOP;
